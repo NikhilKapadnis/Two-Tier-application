@@ -22,34 +22,7 @@
           "protocol": "tcp"
         }
       ],
-      "environment": [
-        {
-          "name": "DB_USER",
-          "value": "postgres"
-        },
-        {
-          "name": "DB_HOST",
-          "value": "YOUR_RDS_ENDPOINT"
-        },
-        {
-          "name": "DB_PORT",
-          "value": "5432"
-        },
-        {
-          "name": "DB_NAME",
-          "value": "myappdb"
-        }
-      ],
-      "secrets": [
-        {
-          "name": "DB_PASSWORD",
-          "valueFrom": "arn:aws:secretsmanager:ap-south-1:306616136846:secret:DB_PASSWORD_SECRET"
-        },
-        {
-          "name": "SECRET_KEY",
-          "valueFrom": "arn:aws:secretsmanager:ap-south-1:306616136846:secret:FLASK_SECRET_KEY"
-        }
-      ],
+       
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
